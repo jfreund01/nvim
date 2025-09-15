@@ -10,4 +10,4 @@ vim.keymap.set('n', '<leader><space>',
   { desc = 'Search open buffers' })
 -- Lua version (init.lua)
 vim.keymap.set("n", "<leader>Y", ":%y+<CR>", { desc = "Yank entire file to system clipboard" })
-
+vim.keymap.set("n", "gi", vim.lsp.buf.implementation)

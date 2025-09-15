@@ -12,7 +12,9 @@ return {
 			require('mini.pick').setup({})
 			require('mini.snippets').setup({})
 			require('mini.completion').setup({})
-      -- require("mini.comment").setup({})
+			
+			vim.keymap.set('n', '<leader>e', require('mini.files').open)
+			-- require("mini.comment").setup({})
       -- require("mini.statusline").setup({})
     end,
   },

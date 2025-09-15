@@ -15,4 +15,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   { import = "plugins" },  -- auto-load every file that returns a spec or list of specs
 }, { checker = { enabled = true } })
-
+vim.opt.swapfile = false
