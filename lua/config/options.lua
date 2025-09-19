@@ -6,4 +6,5 @@ vim.o.smartcase = true
 vim.o.ignorecase = true
 vim.o.hlsearch = false
 vim.o.signcolumn = 'yes'
+vim.o.updatetime = 100
 
