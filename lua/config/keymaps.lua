@@ -65,3 +65,7 @@ vim.keymap.set({"v"}, "<Tab>", ">gv")
 vim.keymap.set("v", "<S-Tab>", "<gv")
 
 vim.api.nvim_set_keymap("n", "<leader>tt", ":CyberdreamToggleMode<CR>", { noremap = true, silent = true })
+
+
+vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { noremap = true, silent = true })
+
