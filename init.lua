@@ -1,3 +1,12 @@
+-- Suppress deprecation warnings about lspconfig
+local notify = vim.notify
+vim.notify = function(msg, level, opts)
+  if msg:match("deprecated, use vim%.lsp%.config") then
+    return
+  end
+  notify(msg, level, opts)
+end
+
 vim.g.mapleader = vim.keycode('<Space>')
 require("config.options")
 require("config.keymaps")
